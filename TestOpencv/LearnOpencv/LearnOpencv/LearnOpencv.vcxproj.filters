@@ -18,5 +18,8 @@
     <ClCompile Include="mat_basic_container.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="file_input_output.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
