@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C3189C78-852F-4EC5-B260-B27B4BC28556}</ProjectGuid>
-    <RootNamespace>LearnOpencv</RootNamespace>
+    <ProjectGuid>{99C47B67-DDE4-463F-B3D6-3BCD2E114237}</ProjectGuid>
+    <RootNamespace>TestOpencv2</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -68,13 +68,7 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv2;D:\Program Files\opencv\build\include\opencv;D:\Program Files\opencv\build;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program Files\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Program Files\opencv\build\include;D:\Program Files\opencv\build\include\opencv2;D:\Program Files\opencv\build\include\opencv;D:\Program Files\opencv\build;$(IncludePath)</IncludePath>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -87,12 +81,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Program Files\opencv\build\include;</AdditionalIncludeDirectories>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>D:\Program Files\opencv\build\x64\vc14\lib\opencv_world340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\Program Files\opencv\build\x64\vc14\lib</AdditionalLibraryDirectories>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -121,12 +110,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="eroding_dilating.cpp" />
-    <ClCompile Include="file_input_output.cpp" />
-    <ClCompile Include="images_smoothing.cpp" />
-    <ClCompile Include="mat_basic_container.cpp" />
-    <ClCompile Include="opening_closing.cpp" />
-    <ClCompile Include="pyramid_up_down.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

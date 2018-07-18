@@ -14,24 +14,4 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="mat_basic_container.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="file_input_output.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="images_smoothing.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eroding_dilating.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="opening_closing.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="pyramid_up_down.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

@@ -1,11 +1,12 @@
-#include <opencv2/core/core.hpp>
+#if 0
+#include <opencv2/core.hpp>
 #include <iostream>
 #include <string>
 
 using namespace cv;
 using namespace std;
 
-void help(char** av)
+static void help(char** av)
 {
 	cout << endl
 		<< av[0] << " shows the usage of the OpenCV serialization functionality." << endl
@@ -42,11 +43,11 @@ public:   // Data Members
 };
 
 //These write and read functions must be defined for the serialization in FileStorage to work
-void write(FileStorage& fs, const std::string&, const MyData& x)
+static void write(FileStorage& fs, const std::string&, const MyData& x)
 {
 	x.write(fs);
 }
-void read(const FileNode& node, MyData& x, const MyData& default_value = MyData()) {
+static void read(const FileNode& node, MyData& x, const MyData& default_value = MyData()) {
 	if (node.empty())
 		x = default_value;
 	else
@@ -54,7 +55,7 @@ void read(const FileNode& node, MyData& x, const MyData& default_value = MyData(
 }
 
 // This function will print our custom class to the console
-ostream& operator<<(ostream& out, const MyData& m)
+static ostream& operator<<(ostream& out, const MyData& m)
 {
 	out << "{ id = " << m.id << ", ";
 	out << "X = " << m.X << ", ";
@@ -70,7 +71,7 @@ int main(int ac, char** av)
 		return 1;
 	}
 
-	string filename = av[1];
+	string filename = "read_write_.xml"; av[1];
 	{ //write
 		Mat R = Mat_<uchar>::eye(3, 3),
 			T = Mat_<double>::zeros(3, 1);
@@ -149,6 +150,8 @@ int main(int ac, char** av)
 
 	cout << endl
 		<< "Tip: Open up " << filename << " with a text editor to see the serialized data." << endl;
-
+	getchar();
 	return 0;
 }
+
+#endif // 0
