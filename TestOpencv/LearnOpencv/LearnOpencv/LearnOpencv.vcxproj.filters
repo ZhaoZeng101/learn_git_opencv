@@ -33,5 +33,41 @@
     <ClCompile Include="pyramid_up_down.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="creat_trackbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threshold.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filter2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="copy_make_border.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sobel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="laplacian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="canny_detect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="houghlines_houghlinesp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="houghcircles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="remap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="get_rotation_matrix_2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="copy_makeborder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

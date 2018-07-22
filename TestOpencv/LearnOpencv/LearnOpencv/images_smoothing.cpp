@@ -1,4 +1,5 @@
 #if 0
+
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
@@ -7,8 +8,8 @@ using namespace cv;
 
 /// 全局变量
 int DELAY_CAPTION = 1500;
-int DELAY_BLUR = 100;
-int MAX_KERNEL_LENGTH = 31;
+int DELAY_BLUR = 500;
+int MAX_KERNEL_LENGTH = 10;
 
 Mat src; Mat dst;
 char window_name[] = "Filter Demo 1";
@@ -37,7 +38,8 @@ int main(int argc, char** argv)
 
 	for (int i = 1; i < MAX_KERNEL_LENGTH; i = i + 2)
 	{
-		blur(src, dst, Size(i, i), Point(-1, -1));
+		bl
+			ur(src, dst, Size(i, i), Point(-1, -1));
 		if (display_dst(DELAY_BLUR) != 0) { return 0; }
 	}
 
@@ -79,7 +81,7 @@ int display_caption(char* caption)
 {
 	dst = Mat::zeros(src.size(), src.type());
 	putText(dst, caption,
-		Point(src.cols / 4, src.rows / 2),
+		Point(src.cols / 2, src.rows / 2),
 		CV_FONT_HERSHEY_COMPLEX, 1, Scalar(255, 255, 255));
 
 	imshow(window_name, dst);
@@ -95,4 +97,5 @@ int display_dst(int delay)
 	if (c >= 0) { return -1; }
 	return 0;
 }
+
 #endif // 0

@@ -121,12 +121,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="canny_detect.cpp" />
+    <ClCompile Include="copy_makeborder.cpp" />
+    <ClCompile Include="copy_make_border.cpp" />
     <ClCompile Include="eroding_dilating.cpp" />
     <ClCompile Include="file_input_output.cpp" />
+    <ClCompile Include="filter2d.cpp" />
+    <ClCompile Include="get_rotation_matrix_2d.cpp" />
+    <ClCompile Include="houghcircles.cpp" />
+    <ClCompile Include="houghlines_houghlinesp.cpp" />
     <ClCompile Include="images_smoothing.cpp" />
+    <ClCompile Include="laplacian.cpp" />
     <ClCompile Include="mat_basic_container.cpp" />
     <ClCompile Include="opening_closing.cpp" />
     <ClCompile Include="pyramid_up_down.cpp" />
+    <ClCompile Include="creat_trackbar.cpp" />
+    <ClCompile Include="remap.cpp" />
+    <ClCompile Include="sobel.cpp" />
+    <ClCompile Include="threshold.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

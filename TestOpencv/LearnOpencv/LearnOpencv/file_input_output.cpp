@@ -1,4 +1,5 @@
 #if 0
+
 #include <opencv2/core.hpp>
 #include <iostream>
 #include <string>
@@ -74,7 +75,7 @@ int main(int ac, char** av)
 	string filename = "read_write_.xml"; av[1];
 	{ //write
 		Mat R = Mat_<uchar>::eye(3, 3),
-			T = Mat_<double>::zeros(3, 1);
+			T = Mat_<double>::zeros(1, 3);
 		MyData m(1);
 
 		FileStorage fs(filename, FileStorage::WRITE);
@@ -112,7 +113,7 @@ int main(int ac, char** av)
 			help(av);
 			return 1;
 		}
-
+		getchar();
 		FileNode n = fs["strings"];                         // Read string sequence - Get node
 		if (n.type() != FileNode::SEQ)
 		{
@@ -124,12 +125,12 @@ int main(int ac, char** av)
 		for (; it != it_end; ++it)
 			cout << (string)*it << endl;
 
-
+		getchar();
 		n = fs["Mapping"];                                // Read mappings from a sequence
 		cout << "Two  " << (int)(n["Two"]) << "; ";
 		cout << "One  " << (int)(n["One"]) << endl << endl;
 
-
+		getchar();
 		MyData m;
 		Mat R, T;
 
@@ -153,5 +154,7 @@ int main(int ac, char** av)
 	getchar();
 	return 0;
 }
+
+
 
 #endif // 0

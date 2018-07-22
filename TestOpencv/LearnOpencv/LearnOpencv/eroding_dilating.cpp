@@ -1,12 +1,13 @@
 #if 0
+
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "highgui.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <iostream>
 using namespace cv;
-
+using namespace std;
 /// 全局变量
 Mat src, erosion_dst, dilation_dst;
 
@@ -57,11 +58,15 @@ int main(int argc, char** argv)
 		Dilation);
 
 	/// Default start
+	cout << erosion_size << "\t" << erosion_elem << endl;
+	cout << dilation_size << "\t" << dilation_elem << endl;
 	Erosion(0, 0);
 	Dilation(0, 0);
 
 	waitKey(0);
+	getchar();
 	return 0;
+
 }
 
 /**  @function Erosion  */
@@ -96,4 +101,5 @@ void Dilation(int, void*)
 	dilate(src, dilation_dst, element);
 	imshow("Dilation Demo", dilation_dst);
 }
+
 #endif // 0

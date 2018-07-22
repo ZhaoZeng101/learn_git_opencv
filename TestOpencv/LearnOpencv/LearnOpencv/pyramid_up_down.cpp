@@ -1,3 +1,4 @@
+#if 0
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include <math.h>
@@ -24,7 +25,7 @@ int main(int argc, char** argv)
 	printf(" * [ESC] -> Close program \n \n");
 
 	/// ²âÊÔÍ¼Ïñ - ³ß´ç±ØÐëÄÜ±» 2^{n} Õû³ý
-	src = imread("../images/chicky_512.jpg");
+	src = imread("../images/lena512color.tiff");
 	if (!src.data)
 	{
 		printf(" No data! -- Exiting the program \n");
@@ -50,7 +51,7 @@ int main(int argc, char** argv)
 		}
 		if ((char)c == 'u')
 		{
-			pyrUp(tmp, dst, Size(tmp.cols * 2, tmp.rows * 2));
+			pyrUp(tmp, dst, Size(tmp.cols * 4, tmp.rows * 4));
 			printf("** Zoom In: Image x 2 \n");
 		}
 		else if ((char)c == 'd')
@@ -62,5 +63,7 @@ int main(int argc, char** argv)
 		imshow(window_name, dst);
 		tmp = dst;
 	}
+	getchar();
 	return 0;
 }
+#endif // 0

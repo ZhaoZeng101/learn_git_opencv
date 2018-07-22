@@ -33,7 +33,8 @@ int main(int, char**)
 
 	// create by using the create function()
 	//! [create]
-	M.create(4, 4, CV_8UC(2));
+	M.create(4, 4, CV_8UC(3));
+	//	randu(M, Scalar::all(0), Scalar::all(255));
 	cout << "M = " << endl << " " << M << endl << endl;
 	//! [create]
 
@@ -42,7 +43,6 @@ int main(int, char**)
 	int sz[3] = { 2,2,2 };
 	Mat L(3, sz, CV_8UC(1), Scalar::all(0));
 	//! [init]
-
 	// Cannot print via operator <<
 
 	// Create using MATLAB style eye, ones or zero matrix
@@ -61,12 +61,12 @@ int main(int, char**)
 	cout << "C = " << endl << " " << C << endl << endl;
 	//! [comma]
 	// do the same with initializer_list
-#ifdef CV_CXX11
+
 	//! [list]
-	C = (Mat_<double>({ 0, -1, 0, -1, 5, -1, 0, -1, 0 })).reshape(3);
+	C = (Mat_<double>({ 0, -1, 0, -1, 6, -1, 0, -1, 0 })).reshape(3);
 	cout << "C = " << endl << " " << C << endl << endl;
 	//! [list]
-#endif
+
 	//! [clone]
 	Mat RowClone = C.row(1).clone();
 	cout << "RowClone = " << endl << " " << RowClone << endl << endl;
@@ -120,5 +120,6 @@ int main(int, char**)
 	getchar();
 	return 0;
 }
+
 
 #endif // 0

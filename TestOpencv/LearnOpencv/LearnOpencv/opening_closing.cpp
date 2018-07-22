@@ -1,4 +1,5 @@
 #if 0
+
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include <stdlib.h>
@@ -69,4 +70,5 @@ void Morphology_Operations(int, void*)
 	morphologyEx(src, dst, operation, element);
 	imshow(window_name, dst);
 }
+
 #endif // 0
