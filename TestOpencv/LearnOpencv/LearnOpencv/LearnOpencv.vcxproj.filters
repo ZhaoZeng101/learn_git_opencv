@@ -69,5 +69,8 @@
     <ClCompile Include="copy_makeborder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="equalizeHist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

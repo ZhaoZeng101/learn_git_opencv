@@ -124,6 +124,7 @@
     <ClCompile Include="canny_detect.cpp" />
     <ClCompile Include="copy_makeborder.cpp" />
     <ClCompile Include="copy_make_border.cpp" />
+    <ClCompile Include="equalizeHist.cpp" />
     <ClCompile Include="eroding_dilating.cpp" />
     <ClCompile Include="file_input_output.cpp" />
     <ClCompile Include="filter2d.cpp" />
