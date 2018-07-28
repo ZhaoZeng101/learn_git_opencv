@@ -121,24 +121,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="boundingRect.cpp" />
+    <ClCompile Include="calcBackProject.cpp" />
     <ClCompile Include="canny_detect.cpp" />
+    <ClCompile Include="comparaHist.cpp" />
+    <ClCompile Include="convexHull.cpp" />
     <ClCompile Include="copy_makeborder.cpp" />
     <ClCompile Include="copy_make_border.cpp" />
     <ClCompile Include="equalizeHist.cpp" />
     <ClCompile Include="eroding_dilating.cpp" />
     <ClCompile Include="file_input_output.cpp" />
     <ClCompile Include="filter2d.cpp" />
+    <ClCompile Include="find_draw_Contours.cpp" />
     <ClCompile Include="get_rotation_matrix_2d.cpp" />
     <ClCompile Include="houghcircles.cpp" />
     <ClCompile Include="houghlines_houghlinesp.cpp" />
     <ClCompile Include="images_smoothing.cpp" />
     <ClCompile Include="laplacian.cpp" />
+    <ClCompile Include="matchTemplate.cpp" />
+    <ClCompile Include="match_source_from_web.cpp" />
     <ClCompile Include="mat_basic_container.cpp" />
+    <ClCompile Include="minAreaRect.cpp" />
     <ClCompile Include="opening_closing.cpp" />
+    <ClCompile Include="pointPolygonTest.cpp" />
+    <ClCompile Include="PSNR_SSIM.cpp" />
     <ClCompile Include="pyramid_up_down.cpp" />
     <ClCompile Include="creat_trackbar.cpp" />
     <ClCompile Include="remap.cpp" />
     <ClCompile Include="sobel.cpp" />
+    <ClCompile Include="split_clacHist_normalize.cpp" />
     <ClCompile Include="threshold.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
